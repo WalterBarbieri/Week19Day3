@@ -36,8 +36,18 @@
 
 *********** GIT LOG **********
 Può essere personalizzato per la visualizzazione dei commit con tags specifici:
-$ git log --pretty=oneline -> VISUALIZZA INFO SU UNA LINEA
-$ git log -3 -> VISUALIZZA ULTIMI 3
-$ git log --since=1week -> FILTRA ULTIMA SETTIMANA
-$ git log --after=2023-01-01 --before=2023-01-31 -> FILTRA IN ARCO TEMPORALE
-$ git log --after=2023-01-01 --before=2023-01-31 --pretty=oneline -> FILTRA PIU' PARAMETRI
+) $ git log --pretty=oneline -> VISUALIZZA INFO SU UNA LINEA
+) $ git log -3 -> VISUALIZZA ULTIMI 3
+) $ git log --since=1week -> FILTRA ULTIMA SETTIMANA
+) $ git log --after=2023-01-01 --before=2023-01-31 -> FILTRA IN ARCO TEMPORALE
+) $ git log --after=2023-01-01 --before=2023-01-31 --pretty=oneline -> FILTRA PIU' PARAMETRI
+
+*********** GIT FLOW **********
+1) $ git flow init -> INIZIALLIZZA GIT FLOW -> IMPOSTARE MAIN & DEVELOP + PREFISSI
+2) $ git flow <subcommand> start <nome_branch> -> CREA BRANCH NEL SUBCOMMAND SCELTO (i.e. $ git flow feature start first-feature)
+3) $ touch firstFeature.js
+4) $ git add .
+5) $ git commit -m "Added first feature"
+6) $ git push --set-upstream origin <subcommand>/<nome_branch> -> PUSH DELLE MODIFICHE SULLA REPOSITORY REMOTA
+7) $ git flow <subcommand> finish <nome_branch> -> MERGE DEL BRANCH NEL SUBCOMMAND DI RIFERIMENTO CON ELIMINAZIONE CONTESTUALE DEL BRANCH TORNA SUL SUBCOMMAND (i.e. $ git flow feature finish first-feature)
+8) $ git push -> PER SALVARE SUBCOMMAND BRANCH IN REMOTO
