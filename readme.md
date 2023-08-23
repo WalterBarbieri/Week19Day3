@@ -51,3 +51,5 @@ Può essere personalizzato per la visualizzazione dei commit con tags specifici:
 6) $ git push --set-upstream origin <subcommand>/<nome_branch> -> PUSH DELLE MODIFICHE SULLA REPOSITORY REMOTA
 7) $ git flow <subcommand> finish <nome_branch> -> MERGE DEL BRANCH NEL SUBCOMMAND DI RIFERIMENTO CON ELIMINAZIONE CONTESTUALE DEL BRANCH TORNA SUL SUBCOMMAND (i.e. $ git flow feature finish first-feature)
 8) $ git push -> PER SALVARE SUBCOMMAND BRANCH IN REMOTO
+9) $ git flow release start 1.0 -> INIZIA LA RELEASE SU MAIN 
+10) $ git flow release finish 1.0 -> DOPO IL CONTROLLO CONCLUDE LA RELEASE SUL MAIN E CI RIPORTA SU DEVELOP
