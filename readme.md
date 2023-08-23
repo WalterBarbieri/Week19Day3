@@ -53,3 +53,5 @@ Può essere personalizzato per la visualizzazione dei commit con tags specifici:
 8) $ git push -> PER SALVARE SUBCOMMAND BRANCH IN REMOTO
 9) $ git flow release start 1.0 -> INIZIA LA RELEASE SU MAIN 
 10) $ git flow release finish 1.0 -> DOPO IL CONTROLLO CONCLUDE LA RELEASE SUL MAIN E CI RIPORTA SU DEVELOP
+11) $ git flow hotfix start 'bug' -> CREAZIONE BRANCH SOTTO SUBCOMMAND HOTFIX
+12) $ git flow hotfix finish 'bug' -> MERGE DEL BRANCH NEL SUBCOMMAND DI RIFERIMENTO CON ELIMINAZIONE CONTESTUALE DEL BRANCH TORNA SUL SUBCOMMAND
